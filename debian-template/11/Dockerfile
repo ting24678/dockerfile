@@ -4,11 +4,11 @@ FROM docker.io/library/debian:11
 COPY sources.list /etc/apt/sources.list
 
 RUN set -eux; \
-            \
-        apt-get update; \
-            \
-        #......
-            \
-        # apt-get autoremove -y; \
-        apt-get clean -y; \
-        rm -rf /var/lib/apt/lists/*;
+        \
+    apt-get update; \
+        \
+    #......
+        \
+    # apt-get autoremove -y; \
+    apt-get clean -y; \
+    rm -rf /var/lib/apt/lists/*;
